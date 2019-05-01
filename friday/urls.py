@@ -13,13 +13,11 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
+from django.conf.urls import url
+from friday import views
 
-from django.contrib import admin
-from friday import views as friday_views
-from django.conf.urls import include, url
 
 urlpatterns = [
-    url(r'^$', friday_views.index),
-    url(r'^admin/', admin.site.urls),
-    url(r'^friday/?', include('friday.urls')),
+    url(r'^full_game_data/?$', views.full_game_data),
+    # (r'^full_game_data/(.+)/?$', views.full_game_data), # you can send restful request with data by this way
 ]
