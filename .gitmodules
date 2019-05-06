@@ -1,0 +1,3 @@
+[submodule "serivices/thor"]
+	path = serivices/thor
+	url = git://github.com/guanrongjia/thor.git
