@@ -38,25 +38,55 @@ add django bin in system path: in my pc, is  "C:\Python27\Lib\site-packages\djan
 ##  uwsgi
 #### test
 touch test_uwsgi.py
-
+```
 def application(env, start_response):
     start_response('200 OK', [('Content-Type','text/html')])
     return [b"Hello World"]
+```
+
     
 uwsgi --plugin python --http :8001 --wsgi-file test_uwsgi.py
 
 #### uwsgi config file
-[uwsgi]
-chdir = /usr/program/gitdata/tony
-module=tony.wsgi:application
-pidfile=/tmp/project-master.pid
-master = true
-processes = 2
-socket =localhost:8888 
-vacuum = true  #退出时清理环境
-buffer-size = 65536  
 
-uwsgi --ini uwsgi.ini
+``` 
+[uwsgi]
+# 项目目录
+chdir = /usr/program/gitdata/tony
+# 指定项目的application
+module=tony.wsgi:application
+# 进程个数       
+# workers=5
+pidfile=/tmp/project-master.pid
+# 启用主进程
+master = true
+# 启用线程
+enable-threads=true
+processes = 2
+# 指定socket
+socket =localhost:8888 
+# 自动移除unix Socket和pid文件当服务停止的时候
+vacuum = true  
+# 序列化接受的内容，如果可能的话
+thunder-lock=true
+# 最大缓冲区，如果设置得太小，请求的数据超过buffer-size的话，网站会起不来
+buffer-size = 65536 
+# uwsgi默认日志 + 程序print输出
+logto = /tmp/uwsgi.log
+# 打印时间
+logdate = true
+```
+
+----------
+start: uwsgi --ini uwsgi.ini
+
+stop: uwsgi --stop /tmp/project-master.pid
+
+reload: uwsgi --reload /tmp/project-master.pid
+
+*uwsgi 中文文档: https://uwsgi-docs-zh.readthedocs.io/zh_CN/latest/Logging.html*
+
+*uwsgi en doc: https://uwsgi-docs.readthedocs.io/en/latest/Management.html*
 
 ----------
 
