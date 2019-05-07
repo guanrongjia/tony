@@ -78,7 +78,7 @@ logdate = true
 ```
 
 ----------
-start: uwsgi --ini uwsgi.ini
+start: uwsgi --ini /etc/nginx/uwsgi.ini
 
 stop: uwsgi --stop /tmp/project-master.pid
 
