@@ -1,7 +1,8 @@
 # coding:utf-8
 import json
 from django.http import HttpResponse
-from service.thor.src.thor_v1 import main as get_game_data
+from serivices.thor.src.thor_v1 import main as get_game_data
+
 
 def index(request):
     return HttpResponse(u"hello world!")
