@@ -20,6 +20,6 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     url(r'^$', friday_views.index),
-    url(r'^admin/', admin.site.urls),
     url(r'^friday/?', include('friday.urls')),
+    url(r'^admin/?', include(admin.site.urls)),
 ]

@@ -1,11 +1,13 @@
 # coding:utf-8
 import json
+from django.shortcuts import render
 from django.http import HttpResponse
 from serivices.thor.src.thor_v1 import main as get_game_data
 
 
+
 def index(request):
-    return HttpResponse(u"hello world!")
+    return render(request, 'index.html')
 
 
 def full_game_data(request):

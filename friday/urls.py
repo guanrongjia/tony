@@ -19,5 +19,6 @@ from friday import views
 
 urlpatterns = [
     url(r'^full_game_data/?$', views.full_game_data),
+
     # (r'^full_game_data/(.+)/?$', views.full_game_data), # you can send restful request with data by this way
 ]
