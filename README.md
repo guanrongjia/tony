@@ -11,15 +11,11 @@ if you have any questions ,send email to:
 powered by guanrongjia at 2018/04/30
 all rights reserved
 
-
 # use：
 1.python2.7
 
 2.django1.11.8
 
-
- 
- 
 # progress
 ## django
 windows:  
@@ -77,8 +73,8 @@ logto = /tmp/uwsgi.log
 logdate = true
 ```
 
-----------
-start: uwsgi --ini /etc/nginx/uwsgi.ini
+----
+start: uwsgi --ini /etc/nginx/uwsgi.ini  &
 
 stop: uwsgi --stop /tmp/project-master.pid
 
@@ -88,7 +84,7 @@ reload: uwsgi --reload /tmp/project-master.pid
 
 *uwsgi en doc: https://uwsgi-docs.readthedocs.io/en/latest/Management.html*
 
-----------
+----
 
 ## nginx
 /etc/nginx/nginx.conf
