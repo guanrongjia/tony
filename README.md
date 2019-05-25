@@ -88,7 +88,7 @@ reload: uwsgi --reload /tmp/project-master.pid
 
 ## nginx
 /etc/nginx/nginx.conf
-
+``` 
 user root;
 worker_processes 8;
 http{
@@ -114,6 +114,7 @@ http{
 events {
 	worker_connections 1024;
 }
+``` 
 
 service nginx start
 service nginx restart
