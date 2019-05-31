@@ -69,9 +69,28 @@ body{
 	margin-top: 17px;
 	font-size: 0.85em;
 }
-span.green{
-	color:#0fcf8c;
-}
+.maroon {color: maroon;}
+.red {color: red;}
+.magenta {color: magenta;}
+.fuchsia {color: fuchsia;}
+.pink {color: #FAA;}
+.orange {color: orange;}
+.yellow {color: yellow;}
+.lime {color: lime;}
+.green {color:#0fcf8c;}
+.olive {color: olive;}
+.teal {color: teal;}
+.cyan {color: cyan;}
+.aqua {color: aqua;}
+.blue {color: blue;}
+.navy {color: navy;}
+.purple {color: purple;}
+.black {color: black;}
+.gray {color: gray;}
+.silver {color: silver;}
+.white {color: #fff;}
+
+
 .menu{
 	 float:right;
 }
