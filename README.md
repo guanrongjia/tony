@@ -16,8 +16,8 @@ all rights reserved
 
 2.django1.11.8
 
-# progress
-## django
+------------------------------------------------------------------------
+# django
 windows:  
 1、pip install Django==1.11.8
 
@@ -29,9 +29,9 @@ add django bin in system path: in my pc, is  "C:\Python27\Lib\site-packages\djan
 
 3、then create an app in folder tony, run order: python manage.py startapp friday
 
------------
+------------------------------------------------------------------------
 
-##  uwsgi
+#  uwsgi
 #### test
 touch test_uwsgi.py
 ```
@@ -40,7 +40,6 @@ def application(env, start_response):
     return [b"Hello World"]
 ```
 
-    
 uwsgi --plugin python --http :8001 --wsgi-file test_uwsgi.py
 
 #### uwsgi config file
@@ -84,9 +83,20 @@ reload: uwsgi --reload /tmp/project-master.pid
 
 *uwsgi en doc: https://uwsgi-docs.readthedocs.io/en/latest/Management.html*
 
-----
+------------------------------------------------------------------------
+# install and config git
+install and config git in ubuntu:
+https://blog.csdn.net/qq_38716242/article/details/79380825
+```
+user command blow to init and update submoudle
+git submodule foreach git pull  
+git submodule init  
+git submodule update  
+```
 
-## nginx
+------------------------------------------------------------------------
+
+# config nginx
 /etc/nginx/nginx.conf
 ``` 
 user root;
@@ -119,3 +129,14 @@ events {
 service nginx start
 service nginx restart
 service nginx stop
+
+------------------------------------------------------------------------
+
+## setup program
+```
+# collecting static data
+1、python manage.py collectstatic 
+
+
+```
+

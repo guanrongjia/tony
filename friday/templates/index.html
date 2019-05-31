@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -14,7 +13,7 @@
 <script type="text/javascript" src="../../static/js/easing.js"></script>
    <script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
+			$(".scroll").click(function(event){
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 			});
@@ -23,11 +22,11 @@
 <script type="text/javascript" src="../../static/js/jquery.mixitup.min.js"></script>
 	<script type="text/javascript">
 	$(function () {
-		
+
 		var filterList = {
-		
+
 			init: function () {
-			
+
 				// MixItUp plugin
 				// http://mixitup.io
 				$('#portfoliolist').mixitup({
@@ -37,33 +36,33 @@
 					easing: 'snap',
 					// call the hover effect
 					onMixEnd: filterList.hoverEffect()
-				});				
-			
+				});
+
 			},
-			
+
 			hoverEffect: function () {
-			
+
 				// Simple parallax effect
 				$('#portfoliolist .portfolio').hover(
 					function () {
 						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
 					},
 					function () {
 						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-					}		
-				);				
-			
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+					}
+				);
+
 			}
 
 		};
-		
+
 		// Run the show!
 		filterList.init();
-		
-		
-	});	
+
+
+	});
 	</script>
 </head>
 <body>
@@ -83,58 +82,58 @@
 				  <li><a href="#features">Features</a></li>
 				  <li><a href="#works">Works</a></li>
 				  <li><a href="#team">Team</a></li>
-				  <li><a href="#contact">Contact</a></li>								
+				  <li><a href="#contact">Contact</a></li>
 				  <div class="clear"></div>
 				</ul>
 				<script type="text/javascript" src="../../static/js/responsive-nav.js"></script>
-			</div>							
+			</div>
 	  		<div class="clear"></div>
 	  	</div>
 	  </div>
-	  <div class="slider_left" id="home"> 
+	  <div class="slider_left" id="home">
 		   	<div class="wmuSlider example1">
 			   <div class="wmuSliderWrapper">
-				   <article style="position: absolute; width: 100%; opacity: 0;"> 
+				   <article style="position: absolute; width: 100%; opacity: 0;">
 				   	<div class="slider_text">
 				   	  <h1>Meet <span class="head">Brandi!</span></h1>
 				   	  <h2><span class="green">/Creative</span> one page template.</h2>
 				   	  <div class="m_1"><span class="left_line"> </span> <p>We are a team of professionals</p><span class="right_line"> </span></div>
-				   	  <div class="social">	
-						   <ul>	
+				   	  <div class="social">
+						   <ul>
 						   	  <li class="twitter" title="twitter"><a href="#"><span> </span></a></li>
 							  <li class="facebook" title="facebook"><a href="#"><span> </span></a></li>
 							  <li class="google" title="google+"><a href="#"><span> </span></a></li>
-							  <li class="dribble" title="dribble"><a href="#"><span> </span></a></li>			
+							  <li class="dribble" title="dribble"><a href="#"><span> </span></a></li>
 						   </ul>
 			   		   </div>
 		            </div>
 				   </article>
-				   <article style="position: relative; width: 100%; opacity: 1;"> 
+				   <article style="position: relative; width: 100%; opacity: 1;">
 				   	<div class="slider_text">
 				   	  <h1>Lorem<span class="head"> dolor!</span></h1>
 				   	  <h2><span class="green">/tincidu</span> one page template.</h2>
 				   	  <div class="m_1"><span class="left_line"> </span> <p>augue duis dolore te feugait</p><span class="right_line"> </span></div>
-				   	     <div class="social">	
-						   <ul>	
+				   	     <div class="social">
+						   <ul>
 						   	  <li class="twitter" title="twitter"><a href="#"><span> </span></a></li>
 							  <li class="facebook" title="facebook"><a href="#"><span> </span></a></li>
 							  <li class="google" title="google+"><a href="#"><span> </span></a></li>
-							  <li class="dribble" title="dribble"><a href="#"><span> </span></a></li>			
+							  <li class="dribble" title="dribble"><a href="#"><span> </span></a></li>
 						   </ul>
 			   		   </div>
 		            </div>
 				   </article>
-				    <article style="position: absolute; width: 100%; opacity: 0;"> 
+				    <article style="position: absolute; width: 100%; opacity: 0;">
 				    <div class="slider_text">
 				   	  <h1>quod <span class="head">mazim !</span></h1>
 				   	  <h2><span class="green">/Creative</span> one page template.</h2>
 				   	  <div class="m_1"><span class="left_line"> </span> <p>We are a team of professionals</p><span class="right_line"> </span></div>
-				   	    <div class="social">	
-						   <ul>	
+				   	    <div class="social">
+						   <ul>
 						   	  <li class="twitter"><a href="#"><span> </span></a></li>
 							  <li class="facebook"><a href="#"><span> </span></a></li>
 							  <li class="google"><a href="#"><span> </span></a></li>
-							  <li class="dribble"><a href="#"><span> </span></a></li>			
+							  <li class="dribble"><a href="#"><span> </span></a></li>
 						   </ul>
 			   		   </div>
 		            </div>
@@ -148,12 +147,12 @@
              </div>
             	 <script src="../../static/js/jquery.wmuSlider.js"></script>
 				       <script>
-       						 $('.example1').wmuSlider();         
-   						</script> 	
-   	    </div>     
+       						 $('.example1').wmuSlider();
+   						</script>
+   	    </div>
    	    <div class="test-monials-grids" id="features">
 	       <div class="wrap">
-			<h3 class="m_2">Features</h3>	
+			<h3 class="m_2">Features</h3>
 			<div class="m_3"><span class="left_line1"> </span><img src="../../static/images/heart.png" alt=""/><span class="right_line1"> </span></div>
 			  <div class="gallery autoplay items-3">
 			    <div id="item-1" class="control-operator"></div>
@@ -282,10 +281,10 @@
 			</div>
 		</div>
 	  <div class="works" id="works">
-		 <h3 class="m_2">Works</h3>	
+		 <h3 class="m_2">Works</h3>
 			<div class="m_3"><span class="left_line1"> </span><img src="../../static/images/heart.png" alt=""/><span class="right_line1"> </span></div>
 			<p class="m_5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna<br> aliquam erat volutpat. Ut wisi enim ad minim veniam,.</p>
-				<div class="container"> 
+				<div class="container">
 					<ul id="filters" class="clearfix">
 						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
 						<li><span class="filter" data-filter="app">Branding</span></li>
@@ -295,66 +294,66 @@
 					</ul>
 					<div id="portfoliolist">
 					<div class="portfolio logo1 mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>				
+					</div>
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>		
+					</div>
 					<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic9.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>				
+					</div>
 					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>	
+					</div>
 					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>			
+					</div>
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic8.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>	
+					</div>
 					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic5.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>	
+					</div>
 					<div class="portfolio logo1 mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
-						<div class="portfolio-wrapper">		
+						<div class="portfolio-wrapper">
 							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
 						     <img src="../../static/images/pic6.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="../../static/images/icon-eye.png" alt=""/></h2>
 						  	<p class="b-animate b-from-right    b-delay03 ">Lorem ipsum dolor sit amet.<br><span class="m_4">Photography</span></p></div></a>
 		                </div>
-					</div>																																							
+					</div>
 				</div>
 		  </div><!-- container -->
 	   </div>
 	<div class="team" id="team">
-	   <h3 class="m_2">Meet Our Team</h3>	
+	   <h3 class="m_2">Meet Our Team</h3>
 	   <div class="m_3"><span class="left_line1"> </span><img src="../../static/images/heart.png" alt=""/><span class="right_line1"> </span></div>
 	   <p class="m_5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna<br> aliquam erat volutpat. Ut wisi enim ad minim veniam,.</p>
 	  <div class="wrap">
@@ -370,16 +369,16 @@
 		                     <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                     </div>
 		                   </div>
-		                   </a> 
+		                   </a>
 						  <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">nostrud exerc</a></h4>
@@ -392,16 +391,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						  <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">augue duis</a></h4>
@@ -414,16 +413,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						  <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">quod mazim</a></h4>
@@ -436,16 +435,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						  <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -463,16 +462,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						  <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">nostrud exerc</a></h4>
@@ -485,16 +484,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						   <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -507,16 +506,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						   <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -529,16 +528,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						   <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -556,16 +555,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						   <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -578,16 +577,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						   <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -600,16 +599,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						   <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -622,16 +621,16 @@
 		                    <div class="mask">
 		                        <h2>augue duis dolore te feugait nulla facilisi.</h2>
 		                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-		                        <div class="social_hover">	
-								   <ul>	
+		                        <div class="social_hover">
+								   <ul>
 									  <li class="fb"><a href="#"><span> </span></a></li>
 									  <li class="tw"><a href="#"><span> </span></a></li>
-									  <li class="g1"><a href="#"><span> </span></a></li>		
+									  <li class="g1"><a href="#"><span> </span></a></li>
 								   </ul>
 					   			</div>
 		                    </div>
 		                   </div>
-						  </a> 
+						  </a>
 						   <div class="clear"></div>
 						  <div class="grid_desc">
 		                    	<h4><a href="#">Eodem modo</a></h4>
@@ -651,7 +650,7 @@
         </div>
     <div class="facts">
 	  <div class="wrap">
-	   <h3 class="m_2">Some Fun Facts</h3>	
+	   <h3 class="m_2">Some Fun Facts</h3>
 	   <div class="m_3"><span class="left_line2"> </span><img src="../../static/images/heart1.png" alt=""/><span class="right_line2"> </span></div>
 	    <div class="facts_box">
 		   <div class="col_1_of_f span_1_of_f">
@@ -688,7 +687,7 @@
     </div>
     <div class="footer-top" id="contact">
 	  <div class="wrap">
-	   <h3 class="m_2">Let's Discuss</h3>	
+	   <h3 class="m_2">Let's Discuss</h3>
 	   <div class="m_3"><span class="left_line1"> </span><img src="../../static/images/heart.png" alt=""/><span class="right_line1"> </span></div>
 	   <p class="m_5">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
 	   <div class="project">
@@ -716,14 +715,14 @@
 	                <div class="clear"></div>
 	               </div>
 		   </div>
-		   <div class="social_icons">	
-			  <ul>	
+		   <div class="social_icons">
+			  <ul>
 				<li class="behance"><a href="#"><span> </span></a></li>
 				<li class="tw1"><a href="#"><span> </span></a></li>
 				<li class="dribble1"><a href="#"><span> </span></a></li>
-				<li class="forest"><a href="#"><span> </span></a></li>	
-				<li class="g2"><a href="#"><span> </span></a></li>	
-				<div class="clear"></div>		
+				<li class="forest"><a href="#"><span> </span></a></li>
+				<li class="g2"><a href="#"><span> </span></a></li>
+				<div class="clear"></div>
 			  </ul>
 		    </div>
 		    <div class="clear"></div>
@@ -777,20 +776,20 @@
 				<div class="clear"></div>
 	  		</div>
 	   </div>
-   </div>			
+   </div>
    <script type="text/javascript">
 			$(document).ready(function() {
-			
+
 				var defaults = {
 		  			containerID: 'toTop', // fading element id
 					containerHoverID: 'toTopHover', // fading element hover id
 					scrollSpeed: 1200,
-					easingType: 'linear' 
+					easingType: 'linear'
 		 		};
-				
-				
+
+
 				$().UItoTop({ easingType: 'easeOutQuart' });
-				
+
 			});
 		</script>
         <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>
