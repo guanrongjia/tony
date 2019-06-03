@@ -1,14 +1,34 @@
-.max-font {
-	font-size: 36px;
-}
-.largge-font {
-	font-size: 24px;
+@media screen and (max-width: 500px) {
+   .max-font {
+       font-size: 24px;
+   }
+   .largge-font {
+       font-size: 16px;
+   }
+
+   .middle-font {
+       font-size: 14px;
+   }
+
+   .min-font {
+       font-size: 12px;
+   }
 }
 
-.middle-font {
-	font-size: 18px;
+@media screen and (min-width: 501px) {
+   .max-font {
+       font-size: 36px;
+   }
+   .largge-font {
+       font-size: 24px;
+   }
+
+   .middle-font {
+       font-size: 18px;
+   }
+
+   .min-font {
+       font-size: 12px;
+   }
 }
 
-.min-font {
-	font-size: 12px;
-}
